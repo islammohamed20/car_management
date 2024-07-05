@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "autoname": "naming_series",
+ "creation": "2024-07-05 03:53:29.117499",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "driver_name",
+  "car_id",
+  "start_date",
+  "end_date",
+  "source",
+  "destination",
+  "distance",
+  "service_type",
+  "service"
+ ],
+ "fields": [
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Driver Name",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "car_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Car ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source",
+   "reqd": 1
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Data",
+   "label": "Destination",
+   "reqd": 1
+  },
+  {
+   "fieldname": "distance",
+   "fieldtype": "Data",
+   "label": "Distance"
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Select",
+   "label": "Service Type",
+   "options": "1 Way Go\nn1 Way Back\nn2 Way",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Table",
+   "label": "Service",
+   "options": "Sales Invoice Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-05 04:30:24.895308",
+ "modified_by": "Administrator",
+ "module": "Car Management",
+ "name": "Mission",
+ "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}
